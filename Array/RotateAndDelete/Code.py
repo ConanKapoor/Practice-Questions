@@ -6,15 +6,12 @@ for test in range(0,Test_Cases):
     Terms = int(input())
     arr = input().split()
 
-#Rotating array clockwise
-arr1 = [None] * len(arr)
-arr1[0] = arr[len(arr)-1]
-for x in range(1,len(arr)):
-    arr1[x] = arr[x-1]
+#Rotating array clockwise and performing deletion.
+count = 1
+while (len(arr) > 1):
+    arr = [arr[(i+1) % len(arr)] for i in range(0, len(arr))]
+    arr.pop(count-1) if len(arr)>count else arr.pop(len(arr)-1)
+    count+=1
 
-def rotate():
-    
-
-
+#Priting result
 print(arr)
-print(arr1)
