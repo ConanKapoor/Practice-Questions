@@ -1,4 +1,6 @@
-#Author - Shivam Kapoor
+# Author - Shivam Kapoor
+# This code is written as minimal as possible.
+# Link - http://www.geeksforgeeks.org/program-for-array-rotation-continued-reversal-algorithm/
 
 Test_Cases = int(input())
 for test in range(0,Test_Cases):

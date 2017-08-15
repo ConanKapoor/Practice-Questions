@@ -1,6 +1,7 @@
-#Author - Shivam Kapoor
+# Author - Shivam Kapoor
+# This code is written as minimal as possible.
 
-#Rotating array clockwise and performing deletion.
+# Rotating array clockwise and performing deletion.
 def rotate(arr):
     count = 1
     while (len(arr) > 1):
@@ -9,7 +10,7 @@ def rotate(arr):
         count+=1
     arr1.append(arr[0])
 
-#Taking input
+# Taking input
 arr1 = []
 Test_Cases = int(input())
 for test in range(0,Test_Cases):
